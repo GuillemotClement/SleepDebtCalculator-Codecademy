@@ -30,4 +30,3 @@ const getSleephours = (day)=>{
     }
 }
 
-console.log(getSleephours('ruihfweif'));
