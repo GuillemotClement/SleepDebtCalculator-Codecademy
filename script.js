@@ -34,15 +34,14 @@ const getSleephours = (day)=>{
 const getActualSleepHours = () => getSleephours('lundi') + getSleephours('mardi') + getSleephours('mercredi') + getSleephours('jeudi') + getSleephours('vendredi') + getSleephours('samedi') + getSleephours('dimanche');
 
 //Fonction qui récupère le nombre d'heure de sommeil idéal
-const getIdealSleepHours = () => {
-    let idealHours = 8;
-    return idealHours * 7;
-}
+
+const getIdealSleepHours = (idealHours) => idealHours * 7;
+
 
 //fonction qui calcule la dette de sommeil
 const calculateSleepDebt = () => {
     let actualSleepHours = getActualSleepHours();
-    let idealSleepHours = getIdealSleepHours();
+    let idealSleepHours = getIdealSleepHours(10);
     let diffHeure = 0;
     if(actualSleepHours === idealSleepHours){
         return 'Tu as dormis suffisamment';
