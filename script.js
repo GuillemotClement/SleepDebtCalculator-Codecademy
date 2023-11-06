@@ -33,5 +33,9 @@ const getSleephours = (day)=>{
 //fonction qui récupère le nombre d'heure réellement dormis
 const getActualSleepHours = () => getSleephours('lundi') + getSleephours('mardi') + getSleephours('mercredi') + getSleephours('jeudi') + getSleephours('vendredi') + getSleephours('samedi') + getSleephours('dimanche');
 
-
+//Fonction qui récupère le nombre d'heure de sommeil idéal
+const getIdealSleepHours = () => {
+    let idealHours = 8;
+    return idealHours * 7;
+}
 
