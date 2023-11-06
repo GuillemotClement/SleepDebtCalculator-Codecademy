@@ -30,3 +30,8 @@ const getSleephours = (day)=>{
     }
 }
 
+//fonction qui récupère le nombre d'heure réellement dormis
+const getActualSleepHours = () => getSleephours('lundi') + getSleephours('mardi') + getSleephours('mercredi') + getSleephours('jeudi') + getSleephours('vendredi') + getSleephours('samedi') + getSleephours('dimanche');
+
+
+
