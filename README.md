@@ -16,6 +16,9 @@ Enfin, il calculera, en heures, à quelle distance vous vous situez de votre obj
 
 ## ![Amelioration Logo](/ressource/ameliorationLogo.png) Amélioration future
 - Le rendre disponible sur navigateur avec action de l'utilisateur
+- Ajout d'une vision des stats sur un graphique
+- Possibilité que l'utilisateur entre lui même sa valeur de sommeil par nuit
+- Affichage semaine/mois/année
 
 ## ![Logo Technologie](/ressource/technologie.png) Technologie
 JavaScript ![Logo JavaScript](/ressource/javascript.png)
