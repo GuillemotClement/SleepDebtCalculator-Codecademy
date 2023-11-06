@@ -39,3 +39,22 @@ const getIdealSleepHours = () => {
     return idealHours * 7;
 }
 
+//fonction qui calcule la dette de sommeil
+const calculateSleepDebt = () => {
+    let actualSleepHours = getActualSleepHours();
+    let idealSleepHours = getIdealSleepHours();
+    let diffHeure = 0;
+    if(actualSleepHours === idealSleepHours){
+        return 'Tu as dormis suffisamment';
+    }else if(actualSleepHours > idealSleepHours){
+        diffHeure = actualSleepHours - idealSleepHours
+        return `Tu as trop dormis de ${diffHeure} heures`;
+    }else if(actualSleepHours < idealSleepHours){
+        diffHeure = idealSleepHours - actualSleepHours;
+        return `Tu as pas assez dormis de ${diffHeure} heures`;
+    }else {
+        return "Erreur";
+    };
+};
+
+console.log(calculateSleepDebt());
